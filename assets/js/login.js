@@ -26,8 +26,8 @@ $(function () {
     $('#form_reg').on('submit', function (e) {
         e.preventDefault();
         let data = {
-            username: $('#form_login input[name=username]').val(),
-            password: $('#form_login input[name=password]').val()
+            username: $('#form_reg input[name=username]').val(),
+            password: $('#form_reg input[name=password]').val()
         }
         $.post('/api/reguser', data, function (res) {
             if (res.status !== 0) {
